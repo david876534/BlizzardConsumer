@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ssu385.blizzardconsumer.boss.viewcontroller.fragment.BossListFragment">
+
+    <!--The declaration of the RecyclerView in the layout file.  Note that it requires the inclusion
+    of the android suoooirt library (version 7) namespace-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/boss_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>

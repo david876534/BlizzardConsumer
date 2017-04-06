@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_key">wwraxe7g5acurnyjvq83tz43smszfg9e</string>
+    <string name="locale">en_US</string>
+    <string name="base_api_url">https://us.api.battle.net/wow/</string>
+    <string name="boss_route_extension">boss/</string>
+</resources>
