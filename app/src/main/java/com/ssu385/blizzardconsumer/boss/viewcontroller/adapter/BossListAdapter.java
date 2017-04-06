@@ -12,8 +12,10 @@ import com.ssu385.blizzardconsumer.core.model.BossList;
 
 public class BossListAdapter extends RecyclerView.Adapter<BossListViewHolder> {
     private BossList bosses;
+    private int expandedPosition;
 
     public BossListAdapter(BossList bosses) {
+        expandedPosition = -1;
         this.bosses = bosses;
     }
 
@@ -28,9 +30,25 @@ public class BossListAdapter extends RecyclerView.Adapter<BossListViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(BossListViewHolder holder, int position) {
+    public void onBindViewHolder(BossListViewHolder holder, final int position) {
         Boss boss = bosses.getBoss(position);
         holder.bindBoss(boss);
+        final boolean isExpanded = (position == expandedPosition);
+        if (isExpanded){
+            holder.clicked();
+        } else {
+            holder.notClicked();
+        }
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (expandedPosition >= 0){
+                    notifyItemChanged(expandedPosition);
+                }
+                expandedPosition = isExpanded ? -1:position;
+                notifyItemChanged(position);
+            }
+        });
     }
 
     @Override

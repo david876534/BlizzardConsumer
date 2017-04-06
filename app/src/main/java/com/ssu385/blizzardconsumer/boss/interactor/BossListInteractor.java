@@ -14,7 +14,7 @@ public class BossListInteractor implements BossInteractor {
         //The first step after basic creation is to set the BossListResponseListener so that this
         //BossListInteractor will receive the response after the execute call is performed.
 
-        /*BossListAsyncTask asyncTask = new BossListAsyncTask();
+        BossListAsyncTask asyncTask = new BossListAsyncTask();
 
         //This step ONLY DEFINES the methods to which the response from the asyncTask will be handled
         //it DOES NOT call the asyncTasks execute (which subsequently calls doInBackground()
@@ -28,6 +28,6 @@ public class BossListInteractor implements BossInteractor {
             }
         });
         //This next line is where the call is made
-        asyncTask.execute();*/
+        asyncTask.execute();
     }
 }
