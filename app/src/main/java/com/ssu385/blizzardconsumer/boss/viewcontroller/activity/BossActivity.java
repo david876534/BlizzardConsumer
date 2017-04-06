@@ -34,7 +34,6 @@ public class BossActivity extends AppCompatActivity implements BossListFragment.
         // the calling Activityis adding a fragment to the view to be presented
         getSupportFragmentManager().beginTransaction()
                     .add(R.id.fragment_container, bossListFragment).commit();
-
     }
 
     @Override

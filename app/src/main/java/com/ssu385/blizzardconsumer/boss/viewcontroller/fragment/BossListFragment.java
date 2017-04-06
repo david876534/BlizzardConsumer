@@ -18,6 +18,7 @@ import com.ssu385.blizzardconsumer.boss.presenter.BossPresenter;
 import com.ssu385.blizzardconsumer.boss.view.BossView;
 import com.ssu385.blizzardconsumer.boss.viewcontroller.adapter.BossListAdapter;
 import com.ssu385.blizzardconsumer.core.model.Boss;
+import com.ssu385.blizzardconsumer.core.model.BossList;
 
 
 /*
@@ -48,9 +49,9 @@ public class BossListFragment extends Fragment implements BossView {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // instantiated the BossInteractor as the BossListInteractorMock
-        interactor = new BossListInteractorMock();
-        // interactor = new BossListInteractor();
+        // instantiated the BossInteractor as the BossListInteractor
+
+        interactor = new BossListInteractor();
 
         // instantiating presenter with concretely instantiated dependencies
         presenter = new BossPresenter(this, interactor);
@@ -94,15 +95,8 @@ public class BossListFragment extends Fragment implements BossView {
 
     // Handle the results as presented to the View by the Presenter
     @Override
-    public void displayBossViewData(Boss... bosses) {
+    public void displayBossViewData(BossList bosses) {
         BossListAdapter adapter = new BossListAdapter(bosses);
-
-        adapter.setOnItemClickListener(new BossListAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClick() {
-
-            }
-        });
 
         bossListRecycler.setAdapter(adapter);
 

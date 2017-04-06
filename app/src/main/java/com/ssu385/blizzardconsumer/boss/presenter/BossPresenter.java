@@ -4,6 +4,7 @@ package com.ssu385.blizzardconsumer.boss.presenter;
 import com.ssu385.blizzardconsumer.boss.interactor.BossInteractor;
 import com.ssu385.blizzardconsumer.boss.view.BossView;
 import com.ssu385.blizzardconsumer.core.model.Boss;
+import com.ssu385.blizzardconsumer.core.model.BossList;
 
 
 /*
@@ -38,7 +39,7 @@ public class BossPresenter {
             // Overriding the BossDataCallback method, and in the method body invoking a function on
             // the View.
             @Override
-            public void onBossDataCallback(Boss... bosses) {
+            public void onBossDataCallback(BossList bosses) {
                 view.displayBossViewData(bosses);
             }
         });

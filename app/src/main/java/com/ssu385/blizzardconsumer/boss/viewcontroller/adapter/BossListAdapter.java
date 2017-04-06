@@ -8,11 +8,12 @@ import android.view.ViewGroup;
 import com.ssu385.blizzardconsumer.R;
 import com.ssu385.blizzardconsumer.boss.viewcontroller.viewholder.BossListViewHolder;
 import com.ssu385.blizzardconsumer.core.model.Boss;
+import com.ssu385.blizzardconsumer.core.model.BossList;
 
 public class BossListAdapter extends RecyclerView.Adapter<BossListViewHolder> {
-    private Boss[] bosses;
+    private BossList bosses;
 
-    public BossListAdapter(Boss[] bosses) {
+    public BossListAdapter(BossList bosses) {
         this.bosses = bosses;
     }
 
@@ -28,12 +29,12 @@ public class BossListAdapter extends RecyclerView.Adapter<BossListViewHolder> {
 
     @Override
     public void onBindViewHolder(BossListViewHolder holder, int position) {
-        Boss boss = bosses[position];
+        Boss boss = bosses.getBoss(position);
         holder.bindBoss(boss);
     }
 
     @Override
     public int getItemCount() {
-        return bosses.length;
+        return bosses.length();
     }
 }

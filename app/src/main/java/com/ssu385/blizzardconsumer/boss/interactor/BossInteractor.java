@@ -2,6 +2,7 @@ package com.ssu385.blizzardconsumer.boss.interactor;
 
 
 import com.ssu385.blizzardconsumer.core.model.Boss;
+import com.ssu385.blizzardconsumer.core.model.BossList;
 
 /*
     The interactor is responsible for making the necessary async API calls on behalf of the Presenter.
@@ -21,6 +22,6 @@ public interface BossInteractor {
         Interactor
      */
     interface BossDataCallback {
-        void onBossDataCallback(Boss... bosses);
+        void onBossDataCallback(BossList bosses);
     }
 }

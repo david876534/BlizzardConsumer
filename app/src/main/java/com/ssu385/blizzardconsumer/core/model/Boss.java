@@ -15,14 +15,31 @@ public class Boss {
     @SerializedName("description")
     private String description;
 
+    @SerializedName("urlSlug")
     private String urlSlug;
+
+    @SerializedName("zoneId")
     private int zoneId;
+
+    @SerializedName("availableInNormalMode")
     private boolean availableInNormalMode;
+
+    @SerializedName("availableInHeroicMode")
     private boolean availableInHeroicMode;
+
+    @SerializedName("health")
     private int health;
+
+    @SerializedName("heroicHealth")
     private int heroicHealth;
+
+    @SerializedName("level")
     private int level;
+
+    @SerializedName("heroicLevel")
     private int heroicLevel;
+
+    @SerializedName("journalId")
     private int journalId;
 
 
