@@ -6,4 +6,5 @@
     <dimen name="indicator_icon_size">12dp</dimen>
     <dimen name="cardview_elevation">8dp</dimen>
     <dimen name="cardview_corner_radius">5dp</dimen>
+    <dimen name="small_item_margin">4dp</dimen>
 </resources>

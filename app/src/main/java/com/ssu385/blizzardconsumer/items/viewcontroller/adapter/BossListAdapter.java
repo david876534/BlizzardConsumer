@@ -1,13 +1,12 @@
-package com.ssu385.blizzardconsumer.boss.viewcontroller.adapter;
+package com.ssu385.blizzardconsumer.items.viewcontroller.adapter;
 
 import android.support.v7.widget.RecyclerView;
-import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.ssu385.blizzardconsumer.R;
-import com.ssu385.blizzardconsumer.boss.viewcontroller.viewholder.BossListViewHolder;
+import com.ssu385.blizzardconsumer.items.viewcontroller.viewholder.BossListViewHolder;
 import com.ssu385.blizzardconsumer.core.model.Boss;
 import com.ssu385.blizzardconsumer.core.model.BossList;
 

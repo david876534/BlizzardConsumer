@@ -1,4 +1,4 @@
-package com.ssu385.blizzardconsumer.boss.viewcontroller.fragment;
+package com.ssu385.blizzardconsumer.items.viewcontroller.fragment;
 
 import android.content.Context;
 import android.net.Uri;
@@ -11,13 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ssu385.blizzardconsumer.R;
-import com.ssu385.blizzardconsumer.boss.interactor.BossInteractor;
-import com.ssu385.blizzardconsumer.boss.interactor.BossListInteractor;
-import com.ssu385.blizzardconsumer.boss.interactor.BossListInteractorMock;
-import com.ssu385.blizzardconsumer.boss.presenter.BossPresenter;
-import com.ssu385.blizzardconsumer.boss.view.BossView;
-import com.ssu385.blizzardconsumer.boss.viewcontroller.adapter.BossListAdapter;
-import com.ssu385.blizzardconsumer.core.model.Boss;
+import com.ssu385.blizzardconsumer.items.interactor.BossInteractor;
+import com.ssu385.blizzardconsumer.items.interactor.BossListInteractor;
+import com.ssu385.blizzardconsumer.items.presenter.BossPresenter;
+import com.ssu385.blizzardconsumer.items.view.BossView;
+import com.ssu385.blizzardconsumer.items.viewcontroller.adapter.BossListAdapter;
 import com.ssu385.blizzardconsumer.core.model.BossList;
 
 

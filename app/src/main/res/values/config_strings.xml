@@ -4,4 +4,7 @@
     <string name="locale">en_US</string>
     <string name="base_api_url">https://us.api.battle.net/wow/</string>
     <string name="boss_route_extension">boss/</string>
+    <string name="pets_route_extension">boss/</string>
+    <string name="zone_route_extension">boss/</string>
+    <string name="mount_route_extension">boss/</string>
 </resources>

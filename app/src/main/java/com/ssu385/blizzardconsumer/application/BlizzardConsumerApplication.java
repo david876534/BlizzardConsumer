@@ -15,6 +15,9 @@ public class BlizzardConsumerApplication extends Application {
     private String locale;
     private String apiKey;
     private String bossRouteExtension;
+    private String petsRouteExtension;
+    private String zoneRouteExtension;
+    private String mountRouteExtension;
     private String baseApiUrl;
     @Override
     public void onCreate() {
@@ -30,6 +33,10 @@ public class BlizzardConsumerApplication extends Application {
         locale = res.getString(R.string.locale);
         apiKey = res.getString(R.string.api_key);
         bossRouteExtension = res.getString(R.string.boss_route_extension);
+        petsRouteExtension = res.getString(R.string.pets_route_extension);
+        zoneRouteExtension = res.getString(R.string.zone_route_extension);
+        mountRouteExtension = res.getString(R.string.mount_route_extension);
+
         baseApiUrl = res.getString(R.string.base_api_url);
     }
 
@@ -47,5 +54,17 @@ public class BlizzardConsumerApplication extends Application {
 
     public String getBaseApiUrl() {
         return baseApiUrl;
+    }
+
+    public String getPetsRouteExtension() {
+        return petsRouteExtension;
+    }
+
+    public String getZoneRouteExtension() {
+        return zoneRouteExtension;
+    }
+
+    public String getMountRouteExtension() {
+        return mountRouteExtension;
     }
 }

@@ -1,9 +1,8 @@
-package com.ssu385.blizzardconsumer.boss.presenter;
+package com.ssu385.blizzardconsumer.items.presenter;
 
 
-import com.ssu385.blizzardconsumer.boss.interactor.BossInteractor;
-import com.ssu385.blizzardconsumer.boss.view.BossView;
-import com.ssu385.blizzardconsumer.core.model.Boss;
+import com.ssu385.blizzardconsumer.items.interactor.BossInteractor;
+import com.ssu385.blizzardconsumer.items.view.BossView;
 import com.ssu385.blizzardconsumer.core.model.BossList;
 
 

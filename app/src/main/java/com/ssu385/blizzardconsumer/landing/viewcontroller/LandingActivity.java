@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.ssu385.blizzardconsumer.R;
-import com.ssu385.blizzardconsumer.boss.viewcontroller.activity.BossActivity;
+import com.ssu385.blizzardconsumer.items.viewcontroller.activity.ItemsActivity;
 
 public class LandingActivity extends AppCompatActivity {
 
@@ -22,7 +22,7 @@ public class LandingActivity extends AppCompatActivity {
         bossButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LandingActivity.this, BossActivity.class);
+                Intent intent = new Intent(LandingActivity.this, ItemsActivity.class);
                 startActivity(intent);
             }
         });

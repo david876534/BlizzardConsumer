@@ -1,4 +1,4 @@
-package com.ssu385.blizzardconsumer.boss.viewcontroller.viewholder;
+package com.ssu385.blizzardconsumer.items.viewcontroller.viewholder;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;

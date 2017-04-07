@@ -1,11 +1,11 @@
-package com.ssu385.blizzardconsumer.boss.viewcontroller.activity;
+package com.ssu385.blizzardconsumer.items.viewcontroller.activity;
 
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.ssu385.blizzardconsumer.R;
-import com.ssu385.blizzardconsumer.boss.viewcontroller.fragment.BossListFragment;
+import com.ssu385.blizzardconsumer.items.viewcontroller.fragment.BossListFragment;
 
 /*
     This activity is primarily in use as a container for the BossListFragment and the
@@ -13,7 +13,7 @@ import com.ssu385.blizzardconsumer.boss.viewcontroller.fragment.BossListFragment
     interface that is internal to the BossListFragment.
 
 */
-public class BossActivity extends AppCompatActivity implements BossListFragment.OnFragmentInteractionListener {
+public class ItemsActivity extends AppCompatActivity implements BossListFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

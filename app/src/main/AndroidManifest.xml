@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".core.viewcontroller.BaseActivity" />
-        <activity android:name=".boss.viewcontroller.activity.BossActivity"></activity>
+        <activity android:name=".items.viewcontroller.activity.ItemsActivity"></activity>
     </application>
 
 </manifest>

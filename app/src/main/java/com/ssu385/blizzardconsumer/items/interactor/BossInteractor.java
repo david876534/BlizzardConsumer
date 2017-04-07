@@ -1,7 +1,6 @@
-package com.ssu385.blizzardconsumer.boss.interactor;
+package com.ssu385.blizzardconsumer.items.interactor;
 
 
-import com.ssu385.blizzardconsumer.core.model.Boss;
 import com.ssu385.blizzardconsumer.core.model.BossList;
 
 /*
