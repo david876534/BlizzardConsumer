@@ -1,6 +1,7 @@
 package com.ssu385.blizzardconsumer.boss.viewcontroller.adapter;
 
 import android.support.v7.widget.RecyclerView;
+import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import com.ssu385.blizzardconsumer.core.model.BossList;
 public class BossListAdapter extends RecyclerView.Adapter<BossListViewHolder> {
     private BossList bosses;
     private int expandedPosition;
+    private ViewGroup viewGroup;
 
     public BossListAdapter(BossList bosses) {
         expandedPosition = -1;
@@ -21,7 +23,7 @@ public class BossListAdapter extends RecyclerView.Adapter<BossListViewHolder> {
 
     @Override
     public BossListViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
+        viewGroup = parent;
         View inflatedView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.boss_list_item, parent, false);
 
@@ -30,7 +32,7 @@ public class BossListAdapter extends RecyclerView.Adapter<BossListViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(BossListViewHolder holder, final int position) {
+    public void onBindViewHolder(final BossListViewHolder holder, final int position) {
         Boss boss = bosses.getBoss(position);
         holder.bindBoss(boss);
         final boolean isExpanded = (position == expandedPosition);

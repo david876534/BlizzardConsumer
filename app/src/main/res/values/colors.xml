@@ -3,4 +3,6 @@
     <color name="colorPrimary">#FFA000</color>
     <color name="colorPrimaryDark">#5D4037</color>
     <color name="colorAccent">#FFCA28</color>
+    <color name="color_cardview_background">#FFF8E1</color>
+    <color name="color_recyclerview_background">#FF8F00</color>
 </resources>
